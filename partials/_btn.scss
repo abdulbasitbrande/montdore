@@ -1,107 +1,93 @@
 .btn {
-  padding: 6px 16px;
-  padding-right: 6px;
+  padding: 12px 28px;
   display: inline-block;
+  font-family: "Josefin Sans";
   text-align: center;
   position: relative;
   @include transition(0.4s ease);
-  border-radius: 30px;
+  border-radius: 0;
   border: 0;
   cursor: pointer;
   font-size: 15px;
   text-transform: initial;
 
   &.btn-primary {
-    background-color: $theme-primary;
+    background-color: $theme-black;
     color: $theme-white;
 
     &.var-1 {
-      background-color: rgba($theme-white, 1);
+      background-color: rgba($theme-primary, 1);
       color: $theme-black;
 
       &:hover {
-        background-color: rgba($theme-white, 0.8);
+        background-color: rgba($theme-white, 1);
         color: $theme-black;
       }
     }
 
     &.var-2 {
-      background-color: rgba(238, 238, 238, 1);
+      background-color: rgb(255, 255, 255);
       color: $theme-black;
 
       &:hover {
-        background-color: rgba($theme-primary, .8);
+        background-color: rgba($theme-primary, 1);
         color: $theme-white;
       }
     }
 
     &.var-3 {
-      background-color: rgba(238, 238, 238, 0.2);
+      background-color: transparent;
       color: $theme-white;
-      backdrop-filter: blur(5px);
+      border: 1px solid #fff;
 
       &:hover {
         background-color: rgba(238, 238, 238, 1);
         color: $theme-black;
       }
     }
-    &.arr-tilt img{
+
+    &.var-4 {
+      background-color: transparent;
+      color: $theme-black;
+      border: 1px solid #000;
+
+      &:hover {
+        background-color: rgb(0, 0, 0);
+        color: $theme-white;
+      }
+    }
+
+    &.var-5 {
+      background-color: transparent;
+      color: $theme-black;
+      border: 0;
+      padding: 0;
+      &:hover {
+        background-color: transparent;
+        color: $theme-primary;
+      }
+    }
+    &.arr-tilt img {
       transform: rotate(315deg);
     }
 
     &:hover {
-      background-color: rgba($theme-primary, 0.8);
+      background-color: rgba($theme-primary, 1);
       color: $theme-white;
-    }
 
-    &.var-4 {
-      padding: 6px 20px;
-      padding-right: 6px;
-      background-color: rgba(255, 255, 255, 0.30);
-      color: $theme-white;
-      backdrop-filter: blur(5px);
-      box-shadow: 32.633px -32.633px 32.633px 0 rgba(194, 194, 194, 0.06) inset, -32.633px 32.633px 32.633px 0 rgba(255, 255, 255, 0.06) inset;
-      backdrop-filter: blur(16.64299964904785px);
-      display: inline-flex;
-      align-items: center;
-      gap: 15px;
-      *{
-        transition: 0.4s all;
+      img {
+        filter: brightness(0) saturate(100%) invert(62%) sepia(30%)
+          saturate(658%) hue-rotate(4deg) brightness(99%) contrast(89%);
+        transform: rotate(360deg);
       }
-      .btn-arrow {
-        width: 43px;
-        height: 43px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #2888C5;
-        border-radius: 50%;
-        transform: rotate(-45deg);
-        transition: 0.4s all;
-      }
-
-      &:hover {
-        background-color: var(--theme-primary-color);
-        color: $theme-white;
-
-        .btn-arrow {
-          transform: rotate(0deg);
-          background-color: var(--theme-white-color);
-          svg{
-            path {
-              fill: black;
-            }
-          }
-        }
-      }
-
-
     }
   }
 
   & img {
-    width: 43px;
-    height: 43px;
+    width: 15px;
+    height: 15px;
     margin-left: 8px;
+    @include transition(0.4s ease);
+    transform: rotate(315deg);
   }
 }

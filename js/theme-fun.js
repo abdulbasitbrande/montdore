@@ -10,7 +10,6 @@ $(function () {
   // HEADER RESIZE CHECK
 
   //   BACK TO TOP BTN
-
   $(".footer .bot-logo").on("click", function (e) {
     e.preventDefault();
 
@@ -21,8 +20,23 @@ $(function () {
       600 // duration in ms
     );
   });
-
   //   BACK TO TOP BTN
+
+  // HOME BANNER SLIDER
+  var bannerSldier = new Swiper(".banner-slider", {
+    loop: true, // optional, makes it infinite
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    speed: 800, // smooth transition speed
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+  // HOME BANNER SLIDER
 
   $(".hero-slider").slick({
     dots: false,
