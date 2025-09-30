@@ -1,48 +1,56 @@
-form{
-  input, select, textarea{
-    padding-left: 10px;
-    border-radius: 4px;
+form {
+  
+  input,
+  select,
+  textarea {
+    padding: 15px 20px;
+    border-radius: 30px; // pill-shaped
     color: $theme-lg-black;
-    padding: 10px;
     font-family: $sub-heading-font-family;
-    border: 0px solid rgba(59, 58, 58, 1);
-    box-shadow: none;
+    border: none;
+    background-color: #eee;
     font-size: $base-font-size;
+    box-shadow: none;
     -webkit-appearance: none;
-    border-radius: 4px;  
-    // border: none;
     width: 100%;
-  }
- 
-  input[type=text], input[type=number], input[type=email], select, textarea{
-    background-color: $theme-lg-grey;
-    width: 100%;
-    // margin-top: 15px;
-    margin-bottom: 10px;
-    max-height: 100px;
   }
 
-  input[type=submit]{
+  // Two-column layout
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    flex: 1 1 calc(50% - 15px); // half width minus gap
+    max-height: 55px;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input[type="submit"] {
     background: $theme-secondary;
-    padding: 10px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    letter-spacing: 1px;
+    padding: 15px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     color: $theme-white;
-    margin: 20px auto;
-    min-width: 70px;
+    margin-top: 10px;
     border: none;
     @include transition(0.3s);
-    float: right;
-    width: 10%;
 
-    &:hover{
-      background: $theme-secondary;
+    &:hover {
+      background: darken($theme-secondary, 5%);
     }
 
+    // optional for arrow icon styling
+    i {
+      font-size: 18px;
+    }
   }
 }

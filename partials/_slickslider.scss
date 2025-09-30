@@ -90,7 +90,7 @@
 
 .slick-slide {
   img {
-    display: block;
+    // display: inline-block;
   }
   &.slick-loading img {
     display: none;
@@ -305,7 +305,7 @@
     }
   }
   .slick-active button {
-    background: $theme-white;
+    background: $theme-primary;
   }
   li {
     height: auto;

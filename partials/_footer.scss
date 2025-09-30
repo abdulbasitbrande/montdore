@@ -1,0 +1,100 @@
+.footer {
+  overflow: hidden;
+  color: #fff;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+
+  h5 {
+    color: $theme-primary !important;
+    font-weight: 400;
+  }
+
+  a {
+    color: $theme-white;
+  }
+
+  .footer-menu {
+    position: relative;
+    & ul {
+      & li {
+        padding: 4px 0;
+      }
+    }
+  }
+
+  .foo-socials {
+    ul {
+      display: flex;
+      gap: 20px;
+      li {
+        background: #363636;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        transition: 0.3s ease all;
+        cursor: pointer;
+        img {
+          margin-bottom: -4px;
+        }
+        &:hover {
+          background: $theme-primary;
+          img {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-menu {
+    & a {
+      &:first-child {
+        margin-left: 0 !important;
+      }
+    }
+    & .seprator {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  .bot-logo {
+    & img {
+      width: 25px;
+      position: relative;
+      cursor: pointer;
+    }
+    position: relative;
+    &:before {
+      content: "";
+      background: #c4a053;
+      height: 140px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: 0;
+      top: 20px;
+      right: 35px;
+      left: 35px;
+      border-radius: 50%;
+    }
+  }
+  @media (max-width: 992px) {
+    .bot-logo img {
+      position: absolute !important;
+      right: 0;
+      text-align: right;
+      background: $theme-primary;
+      width: 60px !important;
+      padding: 15px 20px;
+      bottom: 0;
+      border-radius: 50%;
+    }
+
+    .bot-logo:before {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: $font-size-h1-res;
+  }
+  h2 {
+    font-size: $font-size-h2-res;
+  }
+  h3 {
+    font-size: $font-size-h3-res;
+  }
+  h4 {
+    font-size: $font-size-h4-res;
+  }
+  h5 {
+    font-size: $font-size-h5-res;
+  }
+  h6 {
+    font-size: $font-size-h6-res;
+  }
+
+  .footer-menu {
+    img.foo-logo {
+      width: 180px;
+    }
+  }
+  .footer .bot-logo:before {
+    left: 0px;
+    right: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 767px) {
+  .footer {
+    .foo-socials ul {
+      justify-content: center;
+    }
+    .bot-logo img {
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      top: -130px;
+    }
+  }
+}
