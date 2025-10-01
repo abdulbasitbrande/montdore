@@ -67,6 +67,17 @@
         color: $theme-primary;
       }
     }
+
+    &.var-6 {
+      background-color: rgba($theme-primary, 1);
+      color: $theme-white;
+
+      &:hover {
+        background-color: rgba($theme-white, 1);
+        color: $theme-black;
+      }
+    }
+
     &.arr-tilt img {
       transform: rotate(315deg);
     }

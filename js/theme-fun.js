@@ -2,7 +2,7 @@ $(function () {
   // HEADER RESIZE CHECK
   $(window)
     .on("resize", function () {
-      if ($(window).width() <= 767 && $("header").hasClass("var-2")) {
+      if ($(window).width() <= 1200 && $("header").hasClass("var-2")) {
         $("header").removeClass("var-2").addClass("var-1");
       }
     })
@@ -35,8 +35,22 @@ $(function () {
       clickable: true,
     },
   });
-
   // HOME BANNER SLIDER
+
+  // MONT DORE SLIDER
+  var montdoreSlider = new Swiper(".montdore-slider", {
+    loop: true,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    speed: 1000,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  // MONT DORE SLIDER
 
   $(".hero-slider").slick({
     dots: false,
