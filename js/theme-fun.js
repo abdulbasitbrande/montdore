@@ -52,28 +52,51 @@ $(function () {
   });
   // MONT DORE SLIDER
 
-  $(".hero-slider").slick({
-    dots: false,
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    speed: 500,
-    pauseOnHover: false,
-    vertical: false,
-    verticalSwiping: false,
-    verticalReverse: false,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          arrows: false,
-          draggable: false,
-          swipe: false,
-        },
-      },
-    ],
-  });
+  // Calculate Width
+  if ($(window).width() >= 992) {
+    var secWidth = $(".forJqueryOnly").width();
+    var containerWidth = $(".forJqueryOnly .container").width();
+    var marginLEftRight = secWidth - containerWidth;
+    var finalMargin = marginLEftRight / 2;
+    console.log(marginLEftRight);
+    $(".forJqueryOnly .img-wrap").css({
+      width: "calc(100% + " + finalMargin + "px)",
+    });
+  }
+
+  // Calculate Width
+  if ($(window).width() >= 992) {
+    var secWidth = $(".leftBoxforJqueryOnly").width();
+    var containerWidth = $(".leftBoxforJqueryOnly .container").width();
+    var marginLEftRight = secWidth - containerWidth;
+    var finalMargin = marginLEftRight / 2;
+    $(".leftBoxforJqueryOnly .img-wrap").css({
+      transform: "translateX(-" + finalMargin + "px)",
+    });
+  }
+
+  // $(".hero-slider").slick({
+  //   dots: false,
+  //   arrows: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   speed: 500,
+  //   pauseOnHover: false,
+  //   vertical: false,
+  //   verticalSwiping: false,
+  //   verticalReverse: false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         arrows: false,
+  //         draggable: false,
+  //         swipe: false,
+  //       },
+  //     },
+  //   ],
+  // });
 });

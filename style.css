@@ -19644,7 +19644,7 @@ header .action-bar .green {
     z-index: 2;
   }
   header.header .navbar button {
-    zoom: 0.8;
+    zoom: 0.5;
   }
   header.header.var-1 .action-bar {
     display: block;
@@ -19927,6 +19927,7 @@ form input[type=submit] i {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  background-attachment: fixed !important;
 }
 #liverate-gns .container {
   position: relative;
@@ -19998,6 +19999,7 @@ form input[type=submit] i {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  background-attachment: fixed !important;
   position: relative;
 }
 #gns-trust::before {
@@ -20045,7 +20047,18 @@ form input[type=submit] i {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  background-attachment: fixed !important;
   position: relative;
+}
+#gns-invest.var-1 {
+  color: #fff;
+}
+#gns-invest.var-1::before {
+  background: #000 !important;
+  opacity: 0.7;
+}
+#gns-invest.var-1 .invest-icons img {
+  filter: invert(1);
 }
 #gns-invest .invest-icons img {
   max-width: 55px;
@@ -20077,6 +20090,7 @@ form input[type=submit] i {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  background-attachment: fixed !important;
   position: relative;
 }
 #montdore .container {
@@ -20203,6 +20217,171 @@ form input[type=submit] i {
     background-position: -400px 0;
   }
 }
+#subheader {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  position: relative;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+#subheader::before {
+  content: "";
+  background: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.6;
+}
+#subheader .breadcrumbs-wrapper {
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+}
+#subheader .breadcrumbs-wrapper ul li {
+  margin-right: 30px;
+  position: relative;
+  color: #ffffff;
+}
+#subheader .breadcrumbs-wrapper ul li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: -17px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+}
+#subheader .breadcrumbs-wrapper ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.4s all;
+}
+#subheader .breadcrumbs-wrapper ul li a:hover {
+  color: #c4a053;
+}
+#subheader .breadcrumbs-wrapper ul li:last-child {
+  margin-right: unset;
+}
+#subheader .breadcrumbs-wrapper ul li:last-child::before {
+  content: unset;
+}
+
+#story img {
+  width: 70px;
+  height: 80px;
+  margin: 0 auto;
+}
+#story img.logo-icon {
+  width: 450px;
+  height: 55px;
+  margin-bottom: -3px;
+}
+
+#why-montdore {
+  background: #efe9d8;
+}
+#why-montdore .row-col-2 {
+  padding-right: 100px !important;
+  padding-left: 100px !important;
+}
+
+#mv-tabbing #mv-tab {
+  border: 0;
+  margin: 0 !important;
+}
+#mv-tabbing #mv-tab li {
+  position: relative;
+}
+#mv-tabbing #mv-tab li .clip-wrapper {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background: #ece3d0;
+  display: flex;
+  width: 160px;
+  height: 180px;
+  flex-direction: column;
+  margin: 15px 0;
+  clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
+  position: relative;
+  zoom: 0.8;
+}
+#mv-tabbing #mv-tab li .clip-wrapper button {
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  padding: 0 10px;
+  border: 0;
+}
+#mv-tabbing #mv-tab li .clip-wrapper button img.btn-icon {
+  position: absolute;
+  left: 10px;
+  bottom: 50%;
+  transform: translateY(50%) rotate(180deg);
+  background: rgba(255, 255, 255, 0.3);
+  width: 130px;
+  height: 150px;
+  padding: 30px;
+  clip-path: polygon(50% 0%, 0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%);
+  zoom: 0.8;
+}
+#mv-tabbing #mv-tab li .clip-wrapper button.active {
+  background: transparent;
+  color: #fff;
+}
+#mv-tabbing #mv-tab li .clip-wrapper button.active img {
+  filter: invert(1) brightness(2);
+}
+#mv-tabbing #mv-tab li .clip-wrapper:has(button.active) {
+  background: #c4a053 !important;
+}
+#mv-tabbing #mv-tab li .clip-wrapper:has(button.active) button {
+  color: #fff;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  padding: 0 10px;
+  border: 0;
+}
+#mv-tabbing #mv-tab li .clip-wrapper:has(button.active) button img.btn-icon {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+#mv-tabbing #mv-tab li:has(button.active)::before {
+  content: "";
+  background: #c4a053;
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  right: -80px;
+  top: 50%;
+  z-index: -1;
+}
+#mv-tabbing #mv-content .tab-pane {
+  opacity: 1;
+  overflow: hidden;
+}
+#mv-tabbing #mv-content .row-col-1 {
+  background: url(/images/mission-bg.svg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 70px;
+}
+#mv-tabbing #mv-content .row-col-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+#mv-tabbing #mv-content .row-col-2 img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 1600px) {
   h1 {
     font-size: 3.75em;
@@ -20235,6 +20414,10 @@ form input[type=submit] i {
   }
   #montdore .montdore-wrapper .montdore-slider .item .item-wrapper .tabncontent .item-content .item-middle {
     width: 100%;
+  }
+  #why-montdore .row-col-2 {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
   }
 }
 @media (max-width: 1200px) {
@@ -20300,6 +20483,13 @@ form input[type=submit] i {
     margin-bottom: 30px;
     text-align: right;
   }
+  #why-montdore .row-col-2 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  #mv-tabbing #mv-tab li:has(button.active)::before {
+    right: -65px;
+  }
 }
 @media (max-width: 1024px) {
   #services .service-card .card-head h3 {
@@ -20312,6 +20502,27 @@ form input[type=submit] i {
 @media (max-width: 992px) {
   br {
     display: none;
+  }
+  #mv-tabbing #mv-tab {
+    border: 0;
+    margin: 0 !important;
+    justify-content: space-evenly !important;
+    margin-bottom: 60px !important;
+  }
+  #mv-tabbing #mv-tab li:has(button.active)::before {
+    bottom: -65px;
+    top: unset;
+    width: 2px;
+    height: 55px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  #mv-tabbing #mv-content .row-col-1 {
+    padding: 40px 70px;
+  }
+  #mv-tabbing #mv-content .row-col-2 img {
+    height: 300px;
   }
 }
 @media (max-width: 767px) {
@@ -20372,6 +20583,12 @@ form input[type=submit] i {
   header .action-bar span {
     font-size: 16px;
   }
+  #story img.logo-icon {
+    width: 300px;
+  }
+  #mv-tabbing #mv-tab li .clip-wrapper {
+    zoom: 0.6;
+  }
 }
 @media (max-width: 425px) {
   #liverate-gns .container .gns-card {
@@ -20391,5 +20608,16 @@ form input[type=submit] i {
   }
   .montdore-slider .swiper-wrapper {
     padding-bottom: 75px;
+  }
+  #story img.logo-icon {
+    width: 200px;
+  }
+  #mv-tabbing #mv-content .row-col-1 {
+    padding: 40px 40px;
+  }
+}
+@media (max-width: 375px) {
+  #mv-tabbing #mv-tab li .clip-wrapper {
+    zoom: 0.5;
   }
 }/*# sourceMappingURL=style.css.map */
