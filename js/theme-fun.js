@@ -1,4 +1,10 @@
 $(function () {
+  // WOW ANIMATION
+  if ($(window).width() >= 992) {
+    // Wow init
+    new WOW().init();
+  }
+  // WOW ANIMATION
   // HEADER RESIZE CHECK
   $(window)
     .on("resize", function () {
@@ -25,11 +31,11 @@ $(function () {
   // HOME BANNER SLIDER
   var bannerSldier = new Swiper(".banner-slider", {
     loop: true, // optional, makes it infinite
-    effect: "fade",
+    effect: "sldie",
     fadeEffect: {
       crossFade: true,
     },
-    speed: 800, // smooth transition speed
+    speed: 2000, // smooth transition speed
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -44,7 +50,7 @@ $(function () {
     fadeEffect: {
       crossFade: true,
     },
-    speed: 1000,
+    speed: 3000,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -74,29 +80,4 @@ $(function () {
       transform: "translateX(-" + finalMargin + "px)",
     });
   }
-
-  // $(".hero-slider").slick({
-  //   dots: false,
-  //   arrows: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   speed: 500,
-  //   pauseOnHover: false,
-  //   vertical: false,
-  //   verticalSwiping: false,
-  //   verticalReverse: false,
-  //   responsive: [
-  //     {
-  //       breakpoint: 767,
-  //       settings: {
-  //         arrows: false,
-  //         draggable: false,
-  //         swipe: false,
-  //       },
-  //     },
-  //   ],
-  // });
 });
