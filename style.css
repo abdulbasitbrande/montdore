@@ -21805,6 +21805,113 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background: #efe9d8;
 }
 
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper {
+  position: relative;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper::before {
+  content: "";
+  background: url(/images/live-rates-mi-bf.png);
+  background-size: 100%;
+  position: absolute;
+  width: 189px;
+  height: 387px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper * {
+  position: relative;
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card {
+  margin: 0 50px;
+  text-align: right;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card ul {
+  margin: 0;
+  margin-top: -5px;
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card ul li {
+  padding: 12px 0;
+  margin: 0 40px;
+  border-bottom: 1px solid #fff;
+  font-family: "Josefin Sans";
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card ul li:first-child {
+  position: relative;
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card ul li:first-child:before {
+  content: "";
+  float: left;
+  border-bottom: 1px solid #c4a053;
+  padding-bottom: 12px;
+  width: 60px;
+  text-align: left;
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(45, 45, 45, 0.4) 0%, rgba(53, 53, 53, 0.1) 100%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(25px);
+  z-index: 0;
+  opacity: 1;
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card * {
+  position: relative;
+  z-index: 1;
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gold-card li:first-child::before {
+  content: "Gold" !important;
+}
+#market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .silver-card li:first-child::before {
+  content: "Silver" !important;
+}
+#market-insights #live-chart .cmt .btn.btn-primary.var-6 {
+  background: #ede5d1;
+  color: #000;
+}
+#market-insights #live-chart .cmt .btn.btn-primary.var-6.active {
+  background: #c4a053;
+  color: #fff;
+}
+#market-insights #mi-tabbing {
+  background: #f1ebdd;
+}
+#market-insights #mi-tabbing ul {
+  gap: 2px;
+  border-color: #c5beac;
+}
+#market-insights #mi-tabbing ul li button {
+  background: #ece3cf;
+  border-radius: 0;
+  color: #000;
+  font-family: "Josefin Sans";
+  padding: 12px 15px;
+}
+#market-insights #mi-tabbing ul li button.active {
+  color: #fff;
+  background: #c4a053;
+}
+#market-insights #mi-tabbing #mi-content p {
+  margin: 0;
+}
+#market-insights #mi-tabbing #mi-content .row {
+  margin: 0;
+}
+#market-insights #mi-tabbing #mi-content .row:nth-child(odd) {
+  background: #e9ddc2;
+}
+#market-insights #mi-tabbing #mi-content .row .second-col-2 .seprator {
+  font-size: 14px;
+}
+
 @media (max-width: 1600px) {
   h1 {
     font-size: 3.75em;
@@ -21990,6 +22097,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #product-inner #invest-sec .first-col p {
     width: 100%;
   }
+  #mi-content p {
+    margin: 0;
+  }
+  #mi-content .row {
+    margin: 0;
+  }
+  #mi-content .row:nth-child(odd) {
+    background: #e9ddc2;
+  }
+  #mi-content .row .second-col-2 {
+    justify-content: start !important;
+    margin-top: 15px;
+  }
+  #mi-content .row .second-col-2 .seprator {
+    padding: 0 10px;
+  }
+  .curr-col-1 {
+    margin-bottom: 25px;
+    justify-content: start !important;
+  }
+  .cmt div {
+    justify-content: center !important;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -22061,6 +22191,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #product-inner #vnb .vnb-card {
     background: #efe9d8;
   }
+  #subheader .breadcrumbs-wrapper span {
+    font-size: 15px;
+  }
 }
 @media (max-width: 600px) {
   #service-single #whytrading .whytrading-img-wrapper {
@@ -22078,7 +22211,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 @media (max-width: 425px) {
-  #liverate-gns .container .gns-card {
+  #liverate-gns .container .gns-card,
+  #liverate-gns-mi .container .gns-card {
     margin: 0;
   }
   #montdore .container::before {
@@ -22112,5 +22246,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media (max-width: 375px) {
   #mv-tabbing #mv-tab li .clip-wrapper {
     zoom: 0.5;
+  }
+  #market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card {
+    margin: 0 25px;
   }
 }/*# sourceMappingURL=style.css.map */

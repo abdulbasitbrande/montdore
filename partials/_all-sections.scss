@@ -1053,6 +1053,158 @@
 }
 // PRODUCT
 
+// MARKET INSIGHTS
+#market-insights {
+  #liverate-gns-mi {
+    .liverate-gns-mi-wrapper {
+      position: relative;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      // background-attachment: fixed !important;
+      &::before {
+        content: "";
+        background: url(/images/live-rates-mi-bf.png);
+        background-size: 100%;
+        position: absolute;
+        width: 189px;
+        height: 387px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      * {
+        position: relative;
+      }
+
+      .gns-card {
+        margin: 0 50px;
+        text-align: right;
+        padding: 40px 0;
+        position: relative;
+        overflow: hidden;
+
+        ul {
+          margin: 0;
+          margin-top: -5px;
+          li {
+            padding: 12px 0;
+            margin: 0 40px;
+            border-bottom: 1px solid #fff;
+            font-family: "Josefin Sans";
+            &:first-child {
+              position: relative;
+              &:before {
+                content: "";
+                float: left;
+                border-bottom: 1px solid $theme-primary;
+                padding-bottom: 12px;
+                width: 60px;
+                text-align: left;
+              }
+            }
+          }
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            180deg,
+            rgba(45, 45, 45, 0.4) 0%,
+            rgba(53, 53, 53, 0.1) 100%
+          );
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(25px);
+          z-index: 0;
+          opacity: 1;
+        }
+
+        * {
+          position: relative;
+          z-index: 1;
+        }
+      }
+      .gold-card {
+        li {
+          &:first-child {
+            &::before {
+              content: "Gold" !important;
+            }
+          }
+        }
+      }
+      .silver-card {
+        li {
+          &:first-child {
+            &::before {
+              content: "Silver" !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #live-chart {
+    .cmt .btn.btn-primary.var-6 {
+      background: #ede5d1;
+      color: #000;
+    }
+
+    .cmt .btn.btn-primary.var-6.active {
+      background: #c4a053;
+      color: #fff;
+    }
+  }
+
+  #mi-tabbing {
+    background: #f1ebdd;
+    ul {
+      gap: 2px;
+      border-color: #c5beac;
+      li {
+        button {
+          background: #ece3cf;
+          border-radius: 0;
+          color: #000;
+          font-family: "Josefin Sans";
+          padding: 12px 15px;
+          &.active {
+            color: #fff;
+            background: $theme-primary;
+          }
+        }
+      }
+    }
+    #mi-content {
+      p {
+        margin: 0;
+      }
+      .row {
+        margin: 0;
+        &:nth-child(odd) {
+          background: #e9ddc2;
+        }
+        .second-col-2 {
+          .seprator {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  // #liverate-gns-mi{
+  //   .container{
+
+  //   }
+  // }
+}
+// MARKET INSIGHTS
+
 @media (max-width: 1600px) {
   h1 {
     font-size: $font-size-h1-res;
@@ -1308,6 +1460,34 @@
   #product-inner #invest-sec .first-col p {
     width: 100%;
   }
+
+  #mi-content {
+    p {
+      margin: 0;
+    }
+    .row {
+      margin: 0;
+      &:nth-child(odd) {
+        background: #e9ddc2;
+      }
+      .second-col-2 {
+        justify-content: start !important;
+        margin-top: 15px;
+        .seprator {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+  .curr-col-1 {
+    margin-bottom: 25px;
+    justify-content: start !important;
+  }
+
+  .cmt div {
+    justify-content: center !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1392,6 +1572,10 @@
   #product-inner #vnb .vnb-card {
     background: #efe9d8;
   }
+
+  #subheader .breadcrumbs-wrapper span{
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1416,7 +1600,8 @@
 }
 
 @media (max-width: 425px) {
-  #liverate-gns .container .gns-card {
+  #liverate-gns .container .gns-card,
+  #liverate-gns-mi .container .gns-card {
     margin: 0;
   }
   #montdore .container::before {
@@ -1462,5 +1647,8 @@
 @media (max-width: 375px) {
   #mv-tabbing #mv-tab li .clip-wrapper {
     zoom: 0.5;
+  }
+  #market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card {
+    margin: 0 25px;
   }
 }

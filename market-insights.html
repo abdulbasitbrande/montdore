@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Mont Dore</title>
+    <link rel="icon" type="image/x-icon" href="images/fav.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header var-1">
+      <div class="action-bar py-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 menu-col-1">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#">
+                <img
+                  src="images/logo.svg"
+                  alt="logo"
+                  class="img-fluid"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <div class="col-md-9 menu-col-2 px-md-5">
+              <div class="marquee-live-rates">
+                <div class="marquee-track">
+                  <!-- First copy -->
+                  <span class="item">
+                    <span class="label">Platinum</span>
+                    <span class="red">1,346.32</span>
+                    <span class="green">+0.32 (+0.02%)</span>
+                  </span>
+                  <span class="item">
+                    <span class="label">Palladium</span>
+                    <span>1,092.27</span>
+                    <span class="green">+2.37 (+0.22%)</span>
+                  </span>
+                  <span class="item">
+                    <span class="label">Gold</span>
+                    <span class="green">3,395.72</span>
+                    <span class="red">-2.90 (-0.09%)</span>
+                  </span>
+                  <span class="item">
+                    <span class="label">Silver</span>
+                    <span>38.8837</span>
+                    <span class="green">+0.32</span>
+                  </span>
+
+                  <!-- Second copy (duplicate for seamless effect) -->
+                  <span class="item">
+                    <span class="label">Platinum</span>
+                    <span class="red">1,346.32</span>
+                    <span class="green">+0.32 (+0.02%)</span>
+                  </span>
+                  <span class="item">
+                    <span class="label">Palladium</span>
+                    <span>1,092.27</span>
+                    <span class="green">+2.37 (+0.22%)</span>
+                  </span>
+                  <span class="item">
+                    <span class="label">Gold</span>
+                    <span class="green">3,395.72</span>
+                    <span class="red">-2.90 (-0.09%)</span>
+                  </span>
+                  <span class="item">
+                    <span class="label">Silver</span>
+                    <span>38.8837</span>
+                    <span class="green">+0.32</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-xl navbar-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-3 menu-col-1">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#">
+                <img
+                  src="images/logo.svg"
+                  alt="logo"
+                  class="img-fluid"
+                  style="max-width: 180px"
+                />
+              </a>
+            </div>
+            <div class="col-6 col-md-9 text-end menu-col-2">
+              <!-- Mobile toggle -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainMenu"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Menu -->
+              <div class="collapse navbar-collapse" id="mainMenu">
+                <ul
+                  class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-xl-center gap-lg-2 main-menu"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link current-item" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Market Insights</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Account Opening</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="market-insights">
+      <section
+        id="subheader"
+        style="background: url(images/market-insights-subheader.png)"
+      >
+        <div class="container text-center">
+          <div class="row position-relative">
+            <h2 class="text-white wow fadeInDown" data-wow-duration="1">
+              Market Insights
+            </h2>
+          </div>
+          <div class="row">
+            <div class="breadcrumbs-wrapper">
+              <ul
+                class="d-flex list-unstyled align-items-center justify-content-start mb-0"
+              >
+                <li><a href="#">Home</a></li>
+                <li><span>Market Insights</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="liverate-gns-mi" class="sec-padding">
+        <div class="container">
+          <div
+            class="liverate-gns-mi-wrapper text-white sec-padding --large"
+            style="background: url(images/mi-gns-bg.png)"
+          >
+            <div class="row">
+              <div class="col-xl-4 wow fadeInLeftBig">
+                <div class="gns-card gold-card">
+                  <ul class="list-unstyled">
+                    <li>427.49 AED / g</li>
+                    <li>4.84 AED / oz</li>
+                    <li>162.50 AED / kg</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 text-center my-5 my-xl-0 wow flipInY">
+                <h2>Live Gold & Silver Prices</h2>
+                <p>
+                  Real-time spot prices keep you updated with<br />the latest
+                  market values.
+                </p>
+                <a href="#" class="btn btn-primary var-6">
+                  Weight Calculator
+                </a>
+              </div>
+              <div class="col-xl-4 wow fadeInRightBig">
+                <div class="gns-card silver-card">
+                  <ul class="list-unstyled">
+                    <li>427.49 AED / g</li>
+                    <li>4.84 AED / oz</li>
+                    <li>162.50 AED / kg</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="live-chart" class="sec-padding">
+        <div class="container">
+          <h2 class="text-center wow fadeInDown" data-wow-duration="1">
+            Live Dubai Gold Rate Charts
+          </h2>
+          <!-- Currency & Metal Selection -->
+          <div class="row mb-4 mt-5 cmt">
+            <div class="col-md-12">
+              <div class="row text-center">
+                <div
+                  class="col-lg-6 d-flex flex-column flex-lg-row align-items-center curr-col-1 justify-content-end gap-3"
+                >
+                  <h5 class="fw-bold mb-0">Currency:</h5>
+                  <div class="btn-group flex-wrap flex-lg-nowrap" role="group">
+                    <button type="button" class="btn btn-primary var-6 active">
+                      AED
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      USD
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      GBP
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      EUR
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-6 d-flex flex-column flex-lg-row align-items-center curr-col-2 justify-content-start gap-3"
+                >
+                  <h5 class="fw-bold mb-0">Metal:</h5>
+                  <div class="btn-group flex-wrap flex-lg-nowrap" role="group">
+                    <button type="button" class="btn btn-primary var-6 active">
+                      Gold
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      Silver
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      Platinum
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      Palladium
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div
+                  class="col-md-12 d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3"
+                >
+                  <h5 class="fw-bold mb-0">Timespan:</h5>
+                  <div class="btn-group flex-wrap flex-lg-nowrap" role="group">
+                    <button type="button" class="btn btn-primary var-6 active">
+                      Live
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      1D
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      1W
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      1M
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      1Y
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      5Y
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      10Y
+                    </button>
+                    <button type="button" class="btn btn-primary var-6">
+                      All
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chart -->
+          <div class="chart py-4">
+            <img src="images/chart-img.png" alt="" width="100%" />
+          </div>
+
+          <!-- Gold Type Buttons -->
+          <div class="d-flex flex-column flex-lg-row justify-content-center gap-2 mb-4">
+            <button class="btn btn-primary var-6">Live Rates</button>
+            <button class="btn btn-primary var-6">24 Carat Gold</button>
+            <button class="btn btn-primary var-6">22 Carat Gold</button>
+            <button class="btn btn-primary var-6">21 Carat Gold</button>
+            <button class="btn btn-primary var-6">18 Carat Gold</button>
+          </div>
+
+          <!-- Note -->
+          <div class="text-center text-muted small">
+            <p class="mb-0">
+              <strong>Please note:</strong> All data is supplied by a 3rd party
+              source. iGold do not control the data displayed above and we are
+              not responsible for any inaccuracies.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="mi-tabbing" class="sec-padding">
+        <div class="container position-relative">
+          <!-- Tabs navigation -->
+          <ul class="nav nav-tabs mb-4" id="mi-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="ln-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#ln"
+                type="button"
+                role="tab"
+                aria-controls="ln"
+                aria-selected="true"
+              >
+                Latest News
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pmt-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#pmt"
+                type="button"
+                role="tab"
+                aria-controls="pmt"
+                aria-selected="false"
+              >
+                Precious Metal Trading
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="hpm-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#hpm"
+                type="button"
+                role="tab"
+                aria-controls="hpm"
+                aria-selected="false"
+              >
+                Hedging for Precious Metal
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="jewellery-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#jewellery"
+                type="button"
+                role="tab"
+                aria-controls="jewellery"
+                aria-selected="false"
+              >
+                Jewellery
+              </button>
+            </li>
+          </ul>
+
+          <!-- Tabs content -->
+          <div class="tab-content text-black" id="mi-content">
+            <div
+              class="tab-pane fade show active"
+              id="ln"
+              role="tabpanel"
+              aria-labelledby="ln-tab"
+            >
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  The Federal Reserve has an opportunity to cut rates by 50
+                  basis points and send gold well above $3,700 - abrdn’s Minter
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Bank of America sees nearly $1 trillion market cap potential
+                  for gold miners
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold reaches new heights as markets anticipate Fed policy
+                  shift
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Low market volatility presents a tactical opportunity for gold
+                  prices - BlackRock’s Koesterich
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold gains on bullish outside markets, upbeat U.S.-China trade
+                  talks
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Will the Fed finally listen to Trump?
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Spot gold trades positive after New York manufacturing index
+                  surprises with a fall to -8.7
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="pmt"
+              role="tabpanel"
+              aria-labelledby="pmt-tab"
+            >
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  The Federal Reserve has an opportunity to cut rates by 50
+                  basis points and send gold well above $3,700 - abrdn’s Minter
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="hpm"
+              role="tabpanel"
+              aria-labelledby="hpm-tab"
+            >
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  The Federal Reserve has an opportunity to cut rates by 50
+                  basis points and send gold well above $3,700 - abrdn’s Minter
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="jewellery"
+              role="tabpanel"
+              aria-labelledby="jewellery-tab"
+            >
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  The Federal Reserve has an opportunity to cut rates by 50
+                  basis points and send gold well above $3,700 - abrdn’s Minter
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+              <div class="row align-items-start py-4">
+                <div class="col-lg-10">
+                  Gold could take over the dollar’s store-of-value role as
+                  fiscal dominance overwhelms the Fed – Sprott’s Paul Wong
+                </div>
+                <div class="col-lg-2 d-flex justify-content-evenly second-col-2">
+                  <p>Kitco News</p>
+                  <span class="seprator">|</span>
+                  <p>Sep 15</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news" class="sec-padding --large">
+        <div class="news-wrapper">
+          <div class="container">
+            <div class="row text-center wow fadeIn">
+              <h2>Blogs & Articles</h2>
+            </div>
+            <div class="row mt-5">
+              <div class="col-md-4 wow fadeInDown" data-wow-delay="100ms">
+                <a
+                  href="#"
+                  class="news-card d-inline-block text-decoration-none text-black mt-5 mt-md-0"
+                >
+                  <img
+                    src="images/news (1).png"
+                    alt=""
+                    width="100%"
+                    class="mb-4"
+                  />
+                  <div class="content pe-lg-5">
+                    <h4>UAE Strengthens Position as Global Bullion Hub</h4>
+                    <p>
+                      The UAE has reinforced its role as a leading hub for
+                      bullion trading, with new trade initiatives and regulatory
+                      frameworks
+                    </p>
+                  </div>
+                  <button class="btn btn-primary var-5 arr-tilt">
+                    More
+                    <img src="images/short-arr.svg" alt="" />
+                  </button>
+                </a>
+              </div>
+              <div class="col-md-4 wow fadeInDown" data-wow-delay="200ms">
+                <a
+                  href="#"
+                  class="news-card d-inline-block text-decoration-none text-black mt-5 mt-md-0"
+                >
+                  <img
+                    src="images/news (2).png"
+                    alt=""
+                    width="100%"
+                    class="mb-4"
+                  />
+                  <div class="content pe-lg-5">
+                    <h4>UAE Strengthens Position as Global Bullion Hub</h4>
+                    <p>
+                      The UAE has reinforced its role as a leading hub for
+                      bullion trading, with new trade initiatives and regulatory
+                      frameworks
+                    </p>
+                  </div>
+                  <button class="btn btn-primary var-5 arr-tilt">
+                    More
+                    <img src="images/short-arr.svg" alt="" />
+                  </button>
+                </a>
+              </div>
+              <div class="col-md-4 wow fadeInDown" data-wow-delay="300ms">
+                <a
+                  href="#"
+                  class="news-card d-inline-block text-decoration-none text-black mt-5 mt-md-0"
+                >
+                  <img
+                    src="images/news (3).png"
+                    alt=""
+                    width="100%"
+                    class="mb-4"
+                  />
+                  <div class="content pe-lg-5">
+                    <h4>UAE Strengthens Position as Global Bullion Hub</h4>
+                    <p>
+                      The UAE has reinforced its role as a leading hub for
+                      bullion trading, with new trade initiatives and regulatory
+                      frameworks
+                    </p>
+                  </div>
+                  <button class="btn btn-primary var-5 arr-tilt">
+                    More
+                    <img src="images/short-arr.svg" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="py-5 pb-3 footer"
+      style="background: url(images/footer-bg.png)"
+    >
+      <div class="container footer-menu py-5">
+        <div class="row text-center text-md-start justify-content-xl-between">
+          <!-- Quick Links -->
+          <div class="col-md-4 col-xl-3">
+            <img src="images/logo.svg" alt="" width="100%" class="foo-logo" />
+            <p class="mt-4">
+              We are a premier trading firm specializing in precious metals,
+              diamonds, pearls, and high end jewelry. With years of expertise,
+              we deliver secure and transparent trading experiences built on
+              trust and excellence.
+            </p>
+          </div>
+          <div class="col-md-8 col-xl-7">
+            <div class="row">
+              <!-- Quick Links -->
+              <div class="col-md-4 mb-4">
+                <h5 class="text-primary">Quick Links</h5>
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <a href="#" class="text-decoration-none">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Services</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Products</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Market Insights</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Resources</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Services -->
+              <div class="col-md-4 mb-4">
+                <h5 class="text-primary">Services</h5>
+                <ul class="list-unstyled mt-3">
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      >Precious metal trading</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none"
+                      >Hedging for precious metal</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Jewellery</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Logistics</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Assaying</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Refining</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Contact Info -->
+              <div class="col-md-4 mb-4">
+                <h5 class="text-primary">Contact Info</h5>
+                <ul class="list-unstyled mt-3">
+                  <li class="text-light">+971 (04) 232 9553</li>
+                  <li class="text-light">info@montdoreco.com</li>
+                  <li class="text-light">
+                    M02, Mezzanine Floor, Gold Fatima Building, Behind Gold Land
+                    Building, Deira.
+                  </li>
+                </ul>
+                <div class="foo-socials">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">
+                        <img src="images/linkedin.svg" alt="" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="images/whatsapp.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4 pt-3 text-center small">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-5 text-center text-lg-end">
+            © 2025 Mont Dore Tra ding L.L.C • All Rights Reserved
+          </div>
+          <div class="col-lg-2 my-3 text-center bot-logo">
+            <img src="images/long-arr.svg" alt="" />
+          </div>
+          <div class="col-lg-5 text-center text-lg-start bottom-menu">
+            <a href="#" class="text-decoration-none mx-2">Privacy Policy</a>
+            <span class="seprator">.</span>
+            <a href="#" class="text-decoration-none mx-2"
+              >Terms and Conditions</a
+            >
+            <span class="seprator">.</span>
+            <a href="#" class="text-decoration-none mx-2">Disclaimer</a>
+            <span class="seprator">.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/wow.js"></script>
+    <script src="js/theme-lib.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/theme-fun.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
