@@ -1205,6 +1205,45 @@
 }
 // MARKET INSIGHTS
 
+// NEWS SINGLE
+#news-single {
+  #news {
+    &:has(.related-post) {
+      background: #f0ebde;
+    }
+  }
+  .share-socials {
+    li {
+      cursor: pointer;
+      &:hover img {
+        background: #c4a053;
+        transform: scale(1.1);
+      }
+      img {
+        background: #e5dccd;
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+        border-radius: 50%;
+        transition: 0.3s ease all;
+      }
+    }
+  }
+  .share-col {
+    position: relative;
+    &::before {
+      content: "";
+      background: #e0ded8;
+      position: absolute;
+      left: 10px;
+      right: 0;
+      height: 1px;
+      width: 75%;
+    }
+  }
+}
+// NEWS SINGLE
+
 @media (max-width: 1600px) {
   h1 {
     font-size: $font-size-h1-res;
@@ -1261,6 +1300,10 @@
 
   .icons-details h5 {
     min-height: 85px;
+  }
+
+  #news-single .share-col::before {
+    width: 70%;
   }
 }
 
@@ -1383,6 +1426,10 @@
       height: 400px;
     }
   }
+
+  #news-single .share-col::before {
+    width: 65%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1488,6 +1535,10 @@
   .cmt div {
     justify-content: center !important;
   }
+
+  #news-single .share-col::before {
+    width: 58%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1573,8 +1624,17 @@
     background: #efe9d8;
   }
 
-  #subheader .breadcrumbs-wrapper span{
+  #subheader .breadcrumbs-wrapper span {
     font-size: 15px;
+  }
+  .news-card {
+    width: 100%;
+  }
+  #news-single .share-col {
+    justify-content: start !important;
+    &:before {
+      display: none;
+    }
   }
 }
 
