@@ -22041,6 +22041,73 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-size: contain;
 }
 
+#acc-opening .acc-card {
+  position: relative;
+  padding: 50px 25px;
+  overflow: hidden;
+  transition: 0.3s ease all;
+  background: #ece3d0;
+  width: 100%;
+  height: 100%;
+}
+#acc-opening .acc-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(images/mission-bg.svg) no-repeat center/cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  border-bottom: 3px solid #000000;
+}
+#acc-opening .acc-card * {
+  position: relative;
+  z-index: 1;
+}
+#acc-opening .acc-card .card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+#acc-opening .acc-card .card-head h3 {
+  min-height: 70px;
+}
+#acc-opening .acc-card .card-head img {
+  width: 45px;
+  height: 45px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+#acc-opening .acc-card .card-content {
+  margin-bottom: 12px;
+}
+#acc-opening .acc-card .card-content ul.multi-col {
+  display: flex;
+  gap: 40px;
+  flex-flow: wrap;
+}
+#acc-opening .acc-card .card-content ul.multi-col li {
+  max-width: calc(16.66% - 34px);
+  flex: 0 0 calc(16.66% - 34px);
+  padding-bottom: 70px;
+  margin-top: 20px;
+}
+#acc-opening .acc-card .card-content ul.multi-col li a {
+  margin-top: 30px;
+  position: absolute;
+  bottom: 0;
+}
+#acc-opening .acc-card:hover {
+  color: #fff !important;
+}
+#acc-opening .acc-card:hover::before {
+  opacity: 1;
+}
+#acc-opening .acc-card:hover .card-head img {
+  filter: invert(1);
+}
+
 @media (max-width: 1600px) {
   h1 {
     font-size: 3.75em;
@@ -22083,6 +22150,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
   #news-single .share-col::before {
     width: 70%;
+  }
+  #acc-opening .acc-card .card-content ul.multi-col {
+    gap: 40px;
+  }
+  #acc-opening .acc-card .card-content ul.multi-col li {
+    max-width: calc(33.333% - 32px);
+    flex: 0 0 calc(33.333% - 32px);
   }
 }
 @media (max-width: 1200px) {
@@ -22261,6 +22335,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #faq-page #weight-calc .weight-calc-wrapper {
     width: 100%;
   }
+  #acc-opening .acc-card .card-content ul.multi-col {
+    gap: 40px;
+  }
+  #acc-opening .acc-card .card-content ul.multi-col li {
+    max-width: calc(49.333% - 32px);
+    flex: 0 0 calc(49.333% - 32px);
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -22362,6 +22443,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     padding-top: 15px !important;
     padding-bottom: 15px !important;
   }
+  #acc-opening .acc-card .card-content ul.multi-col {
+    gap: 40px;
+  }
+  #acc-opening .acc-card .card-content ul.multi-col li {
+    max-width: 100%;
+    flex: 100%;
+  }
 }
 @media (max-width: 600px) {
   #service-single #whytrading .whytrading-img-wrapper {
@@ -22376,6 +22464,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
   .product-card .product-details p {
     width: 100%;
+  }
+  #acc-opening .acc-card .card-head {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 425px) {
@@ -22417,5 +22508,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
   #market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card {
     margin: 0 25px;
+  }
+  #faq-page #faqAccordion button {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

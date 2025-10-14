@@ -1353,6 +1353,88 @@
 }
 // FAQ'S
 
+// ACCOUNT OPENING
+#acc-opening {
+  .acc-card {
+    position: relative;
+    padding: 50px 25px;
+    overflow: hidden;
+    transition: 0.3s ease all;
+    background: #ece3d0;
+    width: 100%;
+    height: 100%;
+
+    // background overlay for smooth fade
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url(images/mission-bg.svg) no-repeat center/cover;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 0;
+      border-bottom: 3px solid $theme-black;
+    }
+
+    * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+
+      h3 {
+        min-height: 70px;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+    }
+
+    .card-content {
+      margin-bottom: 12px;
+      ul.multi-col {
+        display: flex;
+        gap: 40px;
+        flex-flow: wrap;
+        // padding: 0;
+        li {
+          max-width: calc(16.66% - 34px);
+          flex: 0 0 calc(16.66% - 34px);
+          padding-bottom: 70px;
+          margin-top: 20px;
+          a {
+            margin-top: 30px;
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      color: #fff !important;
+      // border-bottom: 3px solid $theme-primary;
+
+      &::before {
+        opacity: 1;
+      }
+
+      .card-head img {
+        filter: invert(1);
+      }
+    }
+  }
+}
+// ACCOUNT OPENING
+
 @media (max-width: 1600px) {
   h1 {
     font-size: $font-size-h1-res;
@@ -1413,6 +1495,14 @@
 
   #news-single .share-col::before {
     width: 70%;
+  }
+
+  #acc-opening .acc-card .card-content ul.multi-col {
+    gap: 40px;
+  }
+  #acc-opening .acc-card .card-content ul.multi-col li {
+    max-width: calc(33.333% - 32px);
+    flex: 0 0 calc(33.333% - 32px);
   }
 }
 
@@ -1652,6 +1742,14 @@
   #faq-page #weight-calc .weight-calc-wrapper {
     width: 100%;
   }
+
+  #acc-opening .acc-card .card-content ul.multi-col {
+    gap: 40px;
+  }
+  #acc-opening .acc-card .card-content ul.multi-col li {
+    max-width: calc(49.333% - 32px);
+    flex: 0 0 calc(49.333% - 32px);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1768,6 +1866,14 @@
     padding-top: 15px !important;
     padding-bottom: 15px !important;
   }
+
+  #acc-opening .acc-card .card-content ul.multi-col {
+    gap: 40px;
+  }
+  #acc-opening .acc-card .card-content ul.multi-col li {
+    max-width: 100%;
+    flex: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1788,6 +1894,9 @@
 
   .product-card .product-details p {
     width: 100%;
+  }
+  #acc-opening .acc-card .card-head{
+    margin-bottom: 20px;
   }
 }
 
@@ -1842,5 +1951,8 @@
   }
   #market-insights #liverate-gns-mi .liverate-gns-mi-wrapper .gns-card {
     margin: 0 25px;
+  }
+  #faq-page #faqAccordion button {
+    font-size: 14px;
   }
 }
