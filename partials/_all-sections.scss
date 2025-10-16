@@ -1435,6 +1435,108 @@
 }
 // ACCOUNT OPENING
 
+// CONTACT
+#contact-page {
+  #contact-sec {
+    padding-bottom: 300px;
+    position: relative;
+    z-index: 1;
+    background: rgba(239, 233, 216, 0.5);
+    .contact-details {
+      margin-top: 60px;
+      li {
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+        span {
+          background: $theme-primary;
+          height: 50px;
+          width: 50px;
+          text-align: center;
+          padding: 12px;
+          border-radius: 50%;
+          img {
+            width: 20px;
+            height: 18px;
+          }
+        }
+        a,
+        p {
+          text-decoration: unset;
+          color: #000;
+        }
+      }
+    }
+    form {
+      input,
+      textarea {
+        background: transparent;
+        border-radius: 0;
+        border-color: #9e9e9e;
+        resize: none;
+        width: 100%;
+        padding: 10px 30px;
+        text-align: left !important;
+      }
+      label {
+        background: #f4f0e4;
+        position: relative;
+        left: 30px;
+        bottom: -10px;
+        padding: 0 10px;
+      }
+    }
+  }
+  #map-sec {
+    margin-top: -175px;
+    margin-bottom: 80px;
+    .map-img {
+      filter: grayscale(1);
+    }
+    .map-detail-overlay {
+      text-decoration: unset;
+      color: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      top: 48%;
+      transform: translateY(-50%);
+      z-index: 1;
+      .map-detail-overlay-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 20px;
+        span.map-mark {
+          background: $theme-primary;
+          padding: 16px 20px;
+          border-radius: 50%;
+          img {
+            width: 23px;
+            height: 32px;
+            transition: 0.3s ease all;
+          }
+        }
+        span.map-address {
+          padding: 15px 30px;
+          background: $theme-primary;
+        }
+      }
+      &:hover {
+        span.map-mark {
+          img {
+            transform: scale(1.2);
+            transition: 0.3s ease all;
+          }
+        }
+      }
+    }
+  }
+}
+// CONTACT
+
 @media (max-width: 1600px) {
   h1 {
     font-size: $font-size-h1-res;
@@ -1750,6 +1852,12 @@
     max-width: calc(49.333% - 32px);
     flex: 0 0 calc(49.333% - 32px);
   }
+  #contact-page #contact-sec {
+    padding-bottom: 80px;
+  }
+  #contact-page #map-sec {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1874,6 +1982,31 @@
     max-width: 100%;
     flex: 100%;
   }
+  .map-detail-overlay-wrapper {
+    flex-direction: column;
+  }
+  #contact-page
+    #map-sec
+    .map-detail-overlay
+    .map-detail-overlay-wrapper
+    span.map-mark {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  #contact-page
+    #map-sec
+    .map-detail-overlay
+    .map-detail-overlay-wrapper
+    span.map-address {
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+  }
+
+  #contact-page #map-sec .map-img {
+    height: 400px;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1895,7 +2028,7 @@
   .product-card .product-details p {
     width: 100%;
   }
-  #acc-opening .acc-card .card-head{
+  #acc-opening .acc-card .card-head {
     margin-bottom: 20px;
   }
 }

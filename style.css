@@ -19635,12 +19635,12 @@ header .action-bar .green {
   header.header .navbar .navbar-nav {
     position: absolute;
     background: #fff;
-    margin-top: 20px;
+    margin-top: 0;
     left: 0;
     right: 0;
-    top: 50px;
+    top: 45px;
     text-align: left;
-    padding-left: 20px;
+    padding: 30px 20px;
     z-index: 2;
   }
   header.header .navbar button {
@@ -19740,53 +19740,6 @@ header .action-bar .green {
   .footer .bot-logo:before {
     display: none;
   }
-}
-
-form input,
-form select,
-form textarea {
-  padding: 15px 20px;
-  border-radius: 30px;
-  color: #434343;
-  font-family: "Josefin Sans";
-  border: none;
-  background-color: #eee;
-  font-size: 1em;
-  box-shadow: none;
-  -webkit-appearance: none;
-  width: 100%;
-}
-form input[type=text],
-form input[type=number],
-form input[type=email],
-form select {
-  flex: 1 1 calc(50% - 15px);
-  max-height: 55px;
-}
-form textarea {
-  resize: none;
-}
-form input[type=submit] {
-  background: #000000;
-  padding: 15px 25px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  color: #ffffff;
-  margin-top: 10px;
-  border: none;
-  transition: 0.3s;
-}
-form input[type=submit]:hover {
-  background: black;
-}
-form input[type=submit] i {
-  font-size: 18px;
 }
 
 .hero-banner {
@@ -22108,6 +22061,98 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   filter: invert(1);
 }
 
+#contact-page #contact-sec {
+  padding-bottom: 300px;
+  position: relative;
+  z-index: 1;
+  background: rgba(239, 233, 216, 0.5);
+}
+#contact-page #contact-sec .contact-details {
+  margin-top: 60px;
+}
+#contact-page #contact-sec .contact-details li {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+#contact-page #contact-sec .contact-details li span {
+  background: #c4a053;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 50%;
+}
+#contact-page #contact-sec .contact-details li span img {
+  width: 20px;
+  height: 18px;
+}
+#contact-page #contact-sec .contact-details li a,
+#contact-page #contact-sec .contact-details li p {
+  text-decoration: unset;
+  color: #000;
+}
+#contact-page #contact-sec form input,
+#contact-page #contact-sec form textarea {
+  background: transparent;
+  border-radius: 0;
+  border-color: #9e9e9e;
+  resize: none;
+  width: 100%;
+  padding: 10px 30px;
+  text-align: left !important;
+}
+#contact-page #contact-sec form label {
+  background: #f4f0e4;
+  position: relative;
+  left: 30px;
+  bottom: -10px;
+  padding: 0 10px;
+}
+#contact-page #map-sec {
+  margin-top: -175px;
+  margin-bottom: 80px;
+}
+#contact-page #map-sec .map-img {
+  filter: grayscale(1);
+}
+#contact-page #map-sec .map-detail-overlay {
+  text-decoration: unset;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 48%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+#contact-page #map-sec .map-detail-overlay .map-detail-overlay-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+#contact-page #map-sec .map-detail-overlay .map-detail-overlay-wrapper span.map-mark {
+  background: #c4a053;
+  padding: 16px 20px;
+  border-radius: 50%;
+}
+#contact-page #map-sec .map-detail-overlay .map-detail-overlay-wrapper span.map-mark img {
+  width: 23px;
+  height: 32px;
+  transition: 0.3s ease all;
+}
+#contact-page #map-sec .map-detail-overlay .map-detail-overlay-wrapper span.map-address {
+  padding: 15px 30px;
+  background: #c4a053;
+}
+#contact-page #map-sec .map-detail-overlay:hover span.map-mark img {
+  transform: scale(1.2);
+  transition: 0.3s ease all;
+}
+
 @media (max-width: 1600px) {
   h1 {
     font-size: 3.75em;
@@ -22342,6 +22387,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     max-width: calc(49.333% - 32px);
     flex: 0 0 calc(49.333% - 32px);
   }
+  #contact-page #contact-sec {
+    padding-bottom: 80px;
+  }
+  #contact-page #map-sec {
+    margin-top: 80px;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -22449,6 +22500,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #acc-opening .acc-card .card-content ul.multi-col li {
     max-width: 100%;
     flex: 100%;
+  }
+  .map-detail-overlay-wrapper {
+    flex-direction: column;
+  }
+  #contact-page #map-sec .map-detail-overlay .map-detail-overlay-wrapper span.map-mark {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+  #contact-page #map-sec .map-detail-overlay .map-detail-overlay-wrapper span.map-address {
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+  }
+  #contact-page #map-sec .map-img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (max-width: 600px) {
